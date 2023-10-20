@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecddc5;
+        }
+
+        header {
+            background-color: #445D48;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff5e2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 0.5em 1em;
+            font-size: 16px;
+            cursor: pointer;
+            color: #445D48;
+        }
+
+        #instructions {
+            display: none;
+        }
+
+        .btn {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #008CBA;
+            border: none;
+            color: #000000;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+            width: 100px;
+            transition: all 0.5s;
+            cursor: copy;
+            margin: 5px;
+          }
+            
+            
+        .btn-next {
+            background-color: #e7c2fffd;
+          }
+            
+        .btn:hover {
+            background-color: #f2dcfffd; 
+            color: #000000;
+            transform: scale(1.1);
+          }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Acerca de</h1>
+    </header>
+
+    <section>
+        <h2>Política de Privacidad</h2>
+        <p>Haz clic en el botón para mostrar/ocultar la Politica de Privacidad.</p>
+        <button onclick="toggleInstructions()">Mostrar/ocultar instrucciones</button>
+        <div id="instructions">
+            <p>¡Bienvenido! Aquí encontrarás la Politica de Privacidad de nuestro juego.</p>
+            <li>Recopilación de Información.</li>
+            <p>El Juego del Gato no recopila información personal identificable de los usuarios de manera automática. Sin embargo, es posible que se solicite información personal, como nombre y dirección de correo electrónico, para participar en ciertas funciones del juego, como registro y puntuaciones en línea. Esta información se utilizará únicamente con el propósito indicado y no se compartirá con terceros sin el consentimiento del usuario.</p>
+
+            <li>Uso de la Información.</li>
+            <p>La información recopilada se utilizará para mejorar la experiencia del usuario y proporcionar servicios personalizados. No venderemos ni compartiremos información personal con terceros con fines comerciales.</p>            
+        </div>
+    </section>
+
+    <section>
+        <h2>Términos de Servicio</h2>
+        <p>Haz clic en el botón para mostrar/ocultar la Politica de Privacidad.</p>
+        <button onclick="toggleInstructions()">Mostrar/ocultar instrucciones</button>
+        <div id="instructions">
+            <p>¡Bienvenido! Aquí encontrarás la Politica de Privacidad de nuestro juego.</p>
+            <li>Conducta del Usuario.</li>
+            <p>No se permite el uso del juego de manera que interfiera con otros usuarios o cause daño al juego. Los usuarios deben cumplir con todas las leyes y regulaciones aplicables durante el uso del juego.</p>
+
+            <li>Modificaciones.</li>
+            <p>El Juego del Gato se reserva el derecho de modificar o suspender el juego, así como los términos de servicio, en cualquier momento y sin previo aviso.</p>            
+        
+            <li>Limitación de Responsabilidad.</li>
+            <p>El Juego del Gato no se hace responsable de pérdidas o daños que puedan surgir del uso del juego. Los usuarios utilizan el juego bajo su propio riesgo.</p>
+        </div>
+    </section>
+    
+
+    <script>
+        function toggleInstructions() {
+            var instructions = document.getElementById('instructions');
+            instructions.style.display = (instructions.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+    <center><a href="Menú.html" class="btn btn-next">Volver al inicio</a></center>
+</body>
+</html>

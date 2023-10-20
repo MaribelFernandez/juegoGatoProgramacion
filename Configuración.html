@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración del Juego</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecddc5;
+        }
+
+        header {
+            background-color: #445D48;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff5e2;
+            box-shadow: 0 0 10px rgba(228, 21, 21, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 0.5em 1em;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #008CBA;
+            border: none;
+            color: #000000;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+            width: 100px;
+            transition: all 0.5s;
+            cursor: copy;
+            margin: 5px;
+          }
+            
+            
+        .btn-next {
+            background-color: #fff5e2;
+          }
+            
+        .btn:hover {
+            background-color: #ecddc5;
+            color: #000000;
+            transform: scale(1.1);
+          }
+          
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Configuración del Juego</h1>
+    </header>
+
+    <section>
+        <label for="sound">Sonido:</label>
+        <select id="sound" name="sound">
+            <option value="on">Activado</option>
+            <option value="off">Desactivado</option>
+        </select>
+
+        <label for="graphics">Calidad Gráfica:</label>
+        <select id="graphics" name="graphics">
+            <option value="low">Baja</option>
+            <option value="medium">Media</option>
+            <option value="high">Alta</option>
+        </select>
+
+        <button onclick="guardarConfiguracion()">Guardar Configuración</button>
+    </section>
+
+    <script>
+        function guardarConfiguracion() {
+            // Lógica para guardar la configuración en el juego
+            alert('Configuración guardada con éxito');
+        }
+    </script>
+
+    <center><a href="Menú.html" class="btn btn-next">Volver al inicio</a></center>
+
+
+
+</body>
+</html>

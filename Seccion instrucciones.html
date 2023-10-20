@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecddc5;
+        }
+
+        header {
+            background-color: #445D48;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff5e2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 0.5em 1em;
+            font-size: 16px;
+            cursor: pointer;
+            color: #445D48;
+        }
+
+        #instructions {
+            display: none;
+        }
+
+        .btn {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #008CBA;
+            border: none;
+            color: #000000;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+            width: 100px;
+            transition: all 0.5s;
+            cursor: copy;
+            margin: 5px;
+          }
+            
+            
+        .btn-next {
+            background-color: #e7c2fffd;
+          }
+            
+        .btn:hover {
+            background-color: #f2dcfffd; 
+            color: #000000;
+            transform: scale(1.1);
+          }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Instrucciones del juego del Gato</h1>
+    </header>
+
+    <section>
+        <h2>Instrucciones</h2>
+        <p>Haz clic en el botón para mostrar/ocultar las instrucciones.</p>
+        <button onclick="toggleInstructions()">Mostrar/ocultar instrucciones</button>
+        <div id="instructions">
+            <p>¡Bienvenido! Aquí encontrarás las instrucciones detalladas.</p>
+            <ul>
+                <li>Cada jugador toma turnos para colocar su marca ("X" o "O") en un espacio vacío del tablero.</li>
+                <li>El primer jugador en lograr tener tres de sus marcas en línea (horizontal, vertical o diagonal) gana la partida.</li>
+                <li>Si el tablero se llena y ningún jugador logra la línea de tres, la partida termina en empate.</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <script>
+        function toggleInstructions() {
+            var instructions = document.getElementById('instructions');
+            instructions.style.display = (instructions.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+    <center><a href="Menú.html" class="btn btn-next">Volver al inicio</a></center>
+</body>
+</html>
